@@ -184,7 +184,6 @@ body
     left: 1rem;
 }
 
-
 /* MAIN CONTENT 1 ABOUT */
 .main-content-1.about
 {
@@ -258,7 +257,6 @@ svg
     font-weight: 600;
 }
 
-
 /* MAIN CONTENT 2 ABOUT */
 .main-content-2.about
 {
@@ -269,11 +267,10 @@ svg
     justify-content: flex-start;
     /* border: 2px solid black; */
 }
-
-.main-content-2.about h2
+/* .main-content-2.about h2
 {
-    /* border: 2px solid red; */
-}
+    border: 2px solid red; 
+}  */
 .skills-container
 {
     max-width: max-content;
@@ -282,31 +279,26 @@ svg
     gap: 3rem;
     /* border: 2px solid red; */
 }
-.skills-container-left
+/* .skills-container-left
 {
-    /* border: 2px solid red; */
-}
-.skills-container-right
+    border: 2px solid red;
+} */
+/* .skills-container-right
 {
-    /* justify-self: center; */
-    /* border: 2px solid red; */
-}
-
-
+    justify-self: center;
+    border: 2px solid red;
+} */
 .skills-container-left ul,
 .skills-container-right ul
 {
     list-style-type: none;
 }
 
-
-
 /* MAIN CONTENT 2 + MAIN CONTENT 3 PROJECTS */
 .main-content-1 .projects
 {
     justify-self: start;
 }
-
 .main-content-2.projects,
 .main-content-3.projects
 {
@@ -321,6 +313,7 @@ svg
     background-color: var(--color-lightpetrol);
 
 }
+
 
 
 /* MAIN CONTENT 3 HOME */
@@ -354,8 +347,6 @@ svg
     border-left: 2px dashed var(--color-yellow);
     border-bottom: 2px dashed var(--color-yellow);
 }
-
-
 
 /* MAIN CONTENT 3 ABOUT */
 .main-content-3.about
@@ -404,7 +395,6 @@ svg
 
 
 
-
 /* CONTACT */
 .contact-content
 {
@@ -413,27 +403,23 @@ svg
     flex-direction: column;
     align-items: center;
 }
-
 .contact-article
 {
     margin-bottom: 5rem;
     text-align: center;
 }
-
 .contact-article h2
 {
     font-family: 'Bungee Shade', cursive;
     font-size: 1.8rem;
     color: var(--color-darkpetrol);
 }
-
 .contact-article p
 {
     margin-top: 1rem;
     font-weight: 500;
     color: var(--color-darkrosa);
 }
-
 .flex-column
 {
     width: 100%;
@@ -442,13 +428,11 @@ svg
     justify-content: space-between;
     margin-bottom: 2rem;  
 }
-
 .flex-column label
 {
     font-size: 0.8rem;
     color: var(--color-darkpetrol);
 }
-
 .flex-column input[type=text],
 .flex-column input[type=email],
 .flex-column textarea
@@ -462,33 +446,28 @@ svg
     color: var(--color-midpetrol);
     border-bottom: 1px solid var(--color-midpetrol);
 }
-
 .flex-column input::placeholder,
 .flex-column textarea::placeholder
 {
     color: var(--color-midpetrol);
     font-weight: 300;
 }
-
 .flex-column input:focus::placeholder, 
 .flex-column textarea:focus::placeholder
 {
     color: transparent;
 }
-
 .flex-column input:focus,
 .flex-column textarea:focus
 {
     border-bottom: 1px solid var(--color-yellow);
 }
-
 .submit-btn
 {
     margin-top: 2rem;
     text-transform: uppercase;
     align-self: center;
 }
-
 .submit-btn input[type=submit]
 {
     font-weight: 700;
@@ -500,6 +479,7 @@ svg
     box-shadow: 8px 8px 0px 4px var(--color-midpetrol);
     text-transform: uppercase;
 }
+
 
 
 /* FOOTER */
@@ -589,7 +569,6 @@ svg
         flex-direction: row;
         gap: 2rem;
     }
-    
 
 }
 
