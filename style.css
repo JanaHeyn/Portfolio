@@ -273,12 +273,6 @@ body
     flex-direction: column;
     justify-content: flex-start;
 }
-.main-content-2.about h2
-{
-    /* align-self: center; */
-    /* border: 2px solid red; */
-}
-
 .skills-container
 {
     display: grid;
