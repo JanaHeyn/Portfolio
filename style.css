@@ -21,6 +21,7 @@ padding: 0 5vw;
     --color-midpetrol: #4e7e7e; 
     --color-darkpetrol: #264040; 
     --color-yellow: #F5DD73;
+    --color-yellow-rgba: rgba(245, 221, 115, 0.3);
     font-size: 16px;
 }
 
@@ -272,27 +273,29 @@ body
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    /* border: 2px solid black; */
+}
+
+.main-content-2.about h2
+{
+    /* border: 2px solid red; */
 }
 .skills-container
 {
-    display: grid;
-    justify-content: center;
-/*     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "skills-container-left skills-container-right"; */
-/*     gap: 0 1rem;
-    padding: 1rem 0; */
-    border: 2px solid red;
+    max-width: max-content;
+    display: flex;
+    padding-top: 1.5rem;
+    gap: 3rem;
+    /* border: 2px solid red; */
 }
 .skills-container-left
 {
-    /* grid-area: skills-container-left; */
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 .skills-container-right
 {
-    /* grid-area: skills-container-right; */
-    border: 2px solid red;
+    /* justify-self: center; */
+    /* border: 2px solid red; */
 }
 
 
@@ -305,8 +308,15 @@ body
 
 
 /* MAIN CONTENT 2 PROJECTS */
+.main-content-2.projects
+{
+    background: repeating-linear-gradient(-45deg, transparent, transparent 10px, var(--color-yellow-rgba) 10px, var(--color-yellow-rgba) 18px);
+    /* border: 2px solid red; */
+
+}
 .card1.pr
 {
+    background-color: var(--color-lightpetrol);
     border: 5px dotted var(--color-white);
     -webkit-box-shadow: none; 
     box-shadow: none;
@@ -369,6 +379,7 @@ body
 .card2,
 .card3
 {
+    max-width: 40rem;
     border: 2px solid var(--color-midpetrol);
     -webkit-box-shadow: 10px 10px 0px 4px #4e7e7e; 
     box-shadow: 10px 10px 0px 4px var(--color-midpetrol);
@@ -387,6 +398,7 @@ body
 .card2
 {
     grid-area: card2;
+
 }
 .card3
 {
@@ -550,11 +562,21 @@ body
         "footer footer";
     }
 
+    /* home */
     .main-content-2.home
     {
         margin: 0 2em;
     }
+
+    /* about */
+    .card2
+    {
+        width: 40rem;
+        justify-self: end;
     
+    }
+    
+    /* contact */
     .flex-column .to-row
     {
         flex-direction: row;
