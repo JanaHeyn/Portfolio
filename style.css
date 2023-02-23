@@ -15,7 +15,7 @@ padding: 0 5vw;
     --color-font: #1a1a1a; 
     --color-white: #f8f6ef; 
     --color-grey: #333333;
-    --color-lightrosa: #DFAAAA; /* bisher nicht gebraucht */
+    --color-lightrosa: #DFAAAA;
     --color-darkrosa: #a63f3f; /* bisher nicht gebraucht */
     --color-lightpetrol: #8AB7B7;
     --color-midpetrol: #4e7e7e; 
@@ -185,7 +185,6 @@ body
 }
 
 
-
 /* MAIN CONTENT 1 ABOUT */
 .main-content-1.about
 {
@@ -195,7 +194,6 @@ body
     justify-content: flex-start;
     /* color: var(--color-font2); */
 }
-
 .freetime
 {
     height: 10rem;
@@ -204,17 +202,14 @@ body
     flex-direction: row;
     align-items: flex-end;
 }
-
 .freetime div p
 {
     color: var(--color-yellow);
 }
-
 .freetime :nth-child(even)
 {
     align-self: flex-start;
 }
-
 .cycling,
 .traveling,
 .netflixing,
@@ -230,7 +225,6 @@ body
     justify-content: center;
     align-items: center;
 }
-
 .cycling:hover,
 .traveling:hover,
 .netflixing:hover,
@@ -323,7 +317,7 @@ svg
 .card1.pr,
 .card2.pr
 {
-    width: 40rem;
+    /* width: 40rem; */
     background-color: var(--color-lightpetrol);
 
 }
