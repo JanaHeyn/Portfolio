@@ -59,7 +59,7 @@ body
     "footer";
 }
 
-.p05vw
+.p2vh5vw
 {
     padding: 2vh 5vw;
     /* padding: 5rem 15vw; */
@@ -175,13 +175,13 @@ body
 }
 .border.b1
 {
-    top: -1.5em;
-    left: 1.8em; 
+    top: -1.5rem;
+    left: 1.8rem; 
 }
 .border.b2
 {
-    top: -0.8em;
-    left: 1em;
+    top: -0.8rem;
+    left: 1rem;
 }
 
 
@@ -242,10 +242,10 @@ body
 }
 
 /* MAIN CONTENT 1 PROJECTS */
-/* svg
+svg
 {
     transform: scale(0.5);
-} */
+}
 
 
 
@@ -307,23 +307,26 @@ body
 
 
 
-/* MAIN CONTENT 2 PROJECTS */
-.main-content-2.projects
+/* MAIN CONTENT 2 + MAIN CONTENT 3 PROJECTS */
+.main-content-1 .projects
 {
-    background: repeating-linear-gradient(-45deg, transparent, transparent 10px, var(--color-yellow-rgba) 10px, var(--color-yellow-rgba) 18px);
-    /* border: 2px solid red; */
-
+    justify-self: start;
 }
-.card1.pr
+
+.main-content-2.projects,
+.main-content-3.projects
 {
+    background: repeating-linear-gradient(-45deg, transparent, transparent 5px, var(--color-yellow-rgba) 5px, var(--color-yellow-rgba) 20px); 
+    margin: 3rem 2rem;
+    border: 4px dotted var(--color-white)
+}
+.card1.pr,
+.card2.pr
+{
+    width: 40rem;
     background-color: var(--color-lightpetrol);
-    border: 5px dotted var(--color-white);
-    -webkit-box-shadow: none; 
-    box-shadow: none;
+
 }
-
-
-
 
 
 /* MAIN CONTENT 3 HOME */
@@ -338,8 +341,8 @@ body
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "bottom-left bottom-right";
-    gap: 0 2em;
-    padding: 1.5em;
+    gap: 0 4rem;
+    /* padding: 1.5em; */
     /* border: 2px solid red; */
 }
 .bottom-left
@@ -353,7 +356,7 @@ body
 .bottom-left,
 .bottom-right
 {
-    padding: 0 0 5em 2em;
+    padding: 0 0 5rem 2rem;
     border-left: 2px dashed var(--color-yellow);
     border-bottom: 2px dashed var(--color-yellow);
 }
@@ -373,7 +376,7 @@ body
     "card1"
     "card2"
     "card3";
-    padding-top: 1.5em;
+    padding-top: 1.5rem;
 }
 .card1,
 .card2,
@@ -383,8 +386,8 @@ body
     border: 2px solid var(--color-midpetrol);
     -webkit-box-shadow: 10px 10px 0px 4px #4e7e7e; 
     box-shadow: 10px 10px 0px 4px var(--color-midpetrol);
-    margin-bottom: 2em;
-    padding: 1em;
+    margin-bottom: 2rem;
+    padding: 1rem;
 }
 .card1 ul,
 .card2 ul
@@ -573,8 +576,18 @@ body
     {
         width: 40rem;
         justify-self: end;
-    
     }
+
+    /* projects */
+    /* #inner-grid-content-pr
+    {
+        grid-template-areas: 
+        "header header"
+        "main-content-1 ."
+        "main-content-2 ."
+        "main-content-3 ." 
+        "footer footer";
+    } */
     
     /* contact */
     .flex-column .to-row
