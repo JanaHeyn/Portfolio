@@ -488,6 +488,7 @@ svg
     grid-area: footer;
     margin: 5em 0;
     border-top: 2px dashed var(--color-grey);
+    /* border: 2px solid red; */
 }
 .footer-container
 {
